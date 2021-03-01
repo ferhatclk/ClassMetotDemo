@@ -28,10 +28,12 @@ namespace ClassMetotDemo
             MusteriManager musteriManager = new MusteriManager();
             musteriManager.Ekle(musteri1);
             musteriManager.Ekle(musteri3);
+            Console.WriteLine("--------------------------------");
             foreach (var musteri in musteriler)
             {
                 musteriManager.Listele(musteri);
             }
+            Console.WriteLine("--------------------------------");
             musteriManager.Sil(musteri2);
         }
     }
